@@ -1,14 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #9fa1a7;
 
 }
-.container{
+
+.container {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -16,11 +17,12 @@ body{
     align-items: center;
 }
 
-.main-class{
+.main-class {
 
     padding: 2rem;
 }
-#name{
+
+#name {
     font-size: xx-large;
     text-transform: capitalize;
     letter-spacing: 2px;
@@ -29,26 +31,36 @@ body{
     text-align: center;
 
 }
-#name:hover{
+
+#name:hover {
     color: #2c37cf;
 }
-#image{
-    border: 4px solid #000000;
+
+.imageContainer {
+
     border-radius: 10px;
-    width: 500px;
-    height: 400px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 10px;
-    overflow: hidden;
     position: relative;
+    border: #000 2px solid;
+    height: 400px;
+    width: 500px;
+    overflow: hidden;
+    
 }
-/* #image > img{
 
-} */
+#image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    transition: all .3s linear;
+}
 
-#arrow >:nth-child(1){
+#image>img {
+    border-radius: 10px;
+    margin-left: 1px;
+}
+
+#arrow>:nth-child(1) {
+
     top: 50%;
     left: 0%;
     transform: translateY(-50%);
@@ -60,13 +72,15 @@ body{
     border-radius: 100%;
     transition: all .2s linear;
     color: #fff;
+
 }
-#arrow >:nth-child(1):hover{
+
+#arrow>:nth-child(1):hover {
     background-color: #b7b9bb;
     color: #000;
 }
 
-#arrow >:nth-child(2){
+#arrow>:nth-child(2) {
     top: 50%;
     right: 0%;
     transform: translateY(-50%);
@@ -80,7 +94,7 @@ body{
     color: #fff;
 }
 
-#arrow >:nth-child(2):hover{
+#arrow>:nth-child(2):hover {
     background-color: #b7b9bb;
     color: #000;
 }
